@@ -6,18 +6,22 @@ import { AppComponent } from './app.component';
 import {CoreModule} from '@core/core.module';
 import {SharedModule} from '@shared/shared.module';
 import {LocationStrategy, PathLocationStrategy} from '@angular/common';
-import { SkeletonComponent } from '@layout/skeleton/skeleton.component';
-import { FooterComponent } from '@layout/footer/footer.component';
-import { NavigationComponent } from '@layout/navigation/navigation.component';
-import {UserService} from '@data/services/api/user.service';
-import {HttpClientModule} from '@angular/common/http';
+import { SkeletonComponent } from '@layouts/skeleton/skeleton.component';
+import { FooterComponent } from '@layouts/footer/footer.component';
+import { NavigationComponent } from '@layouts/navigation/navigation.component';
+import { HeaderComponent } from '@layouts/header/header.component';
+import { LeftNavComponent } from '@layouts/left-nav/left-nav.component';
+import { LeftNavMenuComponent } from '@layouts/left-nav/left-nav-menu/left-nav-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SkeletonComponent,
     FooterComponent,
-    NavigationComponent
+    NavigationComponent,
+    HeaderComponent,
+    LeftNavComponent,
+    LeftNavMenuComponent
   ],
   imports: [
     BrowserModule,

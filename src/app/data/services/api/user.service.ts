@@ -19,7 +19,7 @@ export class UserService extends ApiClass{
       data: IcardUser[]
     }> {
       const response = {error: false, msg: '', data: null};
-      return this.http.get(this.url + 'users')
+      return this.http.get<IcardUser[]>(this.url + 'users')
               .pipe(
                     map(r => {
                               response.data = r;
@@ -29,4 +29,26 @@ export class UserService extends ApiClass{
                     catchError(this.error)
                 );
      }
+
+     /**
+      * Get one user by Id
+      */
+     getUserById(id: number): Observable<
+     {
+      error: boolean,
+      msg: string,
+      data: IcardUser
+    }> {
+      const response = {error: false, msg: '', data: null};
+        return this.http.get<IcardUser>(this.url + 'users/' + id)
+        .pipe(
+          map(r => {
+                    response.data = r;
+                    return response;
+                  }
+              ),
+          catchError(this.error)
+      );
+
+    }
 }

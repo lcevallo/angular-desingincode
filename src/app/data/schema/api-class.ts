@@ -1,14 +1,18 @@
 import {environment} from 'environments/environment';
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
 import { of } from 'rxjs';
+import {inject} from '@angular/core';
 
 
 export class ApiClass {
 
   public url = environment.url;
   public isProduction = environment.production;
+  public http: HttpClient;
 
-  constructor(protected http: HttpClient) {}
+  constructor() {
+    this.http = inject(HttpClient);
+  }
 
   error(error: HttpErrorResponse) {
     let errorMessage: string;

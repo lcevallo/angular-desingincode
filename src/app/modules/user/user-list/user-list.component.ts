@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {IcardUser} from '@components/cards/card-user/icard-user.metadata';
 import {USERS_DATA} from '@data/constants/user.const';
 import {UserService} from '@data/services/api/user.service';
+import { IcarouselItem } from '@shared/components/carousel/icarousel-item.metadata';
+import { CAROUSEL_DATA_ITEMS } from '@data/constants/carousel.const';
 
 @Component({
   selector: 'app-user-list',
@@ -9,6 +11,9 @@ import {UserService} from '@data/services/api/user.service';
   styleUrls: ['./user-list.component.scss']
 })
 export class UserListComponent implements OnInit {
+
+
+  public carouselData: IcarouselItem[] = CAROUSEL_DATA_ITEMS;
 
   public users: IcardUser[] ;
 

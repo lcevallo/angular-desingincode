@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-
-
 import * as fromComponents from './components';
-import { CardUserComponent } from '@shared/components';
 import {RouterModule} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+
+
 
 @NgModule({
   imports: [
@@ -15,14 +15,16 @@ import {HttpClientModule} from '@angular/common/http';
     HttpClientModule,
     CommonModule,
     RouterModule,
+    FontAwesomeModule
   ],
-  declarations: [...fromComponents.components, CardUserComponent],
+  declarations: [...fromComponents.components],
   exports: [
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     CommonModule,
     RouterModule,
+    FontAwesomeModule,
     ...fromComponents.components
   ]
 })
