@@ -28,3 +28,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 npm run backend
 npm run start:dev
+
+
+
+//Esta pagina sirve para generar Datos aleatorios y llenarlos en la base de datos
+https://www.mockaroo.com/
+
+https://angular-folder-structure.readthedocs.io/en/latest/media.html
+
+para los colores
+https://coolors.co/b8336a-c695be-726da8-7d8cc4-a0d2db-b2b1d6-c490d1

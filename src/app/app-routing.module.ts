@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {SkeletonComponent} from '@layout/skeleton/skeleton.component';
-
+import {SkeletonComponent} from '@layouts/skeleton/skeleton.component';
 
 const routes: Routes = [
   {
