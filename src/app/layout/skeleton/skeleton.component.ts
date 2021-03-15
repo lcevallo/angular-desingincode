@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-skeleton',
@@ -16,4 +16,5 @@ export class SkeletonComponent {
     this.showLeftNav = !this.showLeftNav;
   }
 
+ 
 }

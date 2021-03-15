@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {IcardUser} from '@components/cards/card-user/icard-user.metadata';
 import {USERS_DATA} from '@data/constants/user.const';
 import {UserService} from '@data/services/api/user.service';
@@ -10,7 +10,7 @@ import { CAROUSEL_DATA_ITEMS } from '@data/constants/carousel.const';
   templateUrl: './user-list.component.html',
   styleUrls: ['./user-list.component.scss']
 })
-export class UserListComponent implements OnInit {
+export class UserListComponent implements AfterViewInit, OnInit {
 
 
   public carouselData: IcarouselItem[] = CAROUSEL_DATA_ITEMS;
@@ -33,6 +33,10 @@ export class UserListComponent implements OnInit {
 
 
   }
+
+  ngAfterViewInit(): void {
+
+    }
 
   ngOnInit(): void {
 
