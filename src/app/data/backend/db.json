@@ -2,7 +2,7 @@
   "users": [
               {
                 "id": 1,
-                "name": "Luis Cevallos",
+                "name": "Pinky Winky",
                 "age": 40,
                 "description": "Desarrollador fullStack",
                 "avatar": "https://pm1.narvii.com/7044/ebf83bd75f8d0f82ec85a01f24fca7c5eab49000r1-540-540v2_hq.jpg",
@@ -10,7 +10,7 @@
               },
               {
                 "id": 2,
-                "name": "Luis Cevallos",
+                "name": "Bulbasour Cerezo",
                 "age": 40,
                 "description": "Desarrollador fullStack",
                 "avatar": "https://pm1.narvii.com/7044/ebf83bd75f8d0f82ec85a01f24fca7c5eab49000r1-540-540v2_hq.jpg"
@@ -24,7 +24,7 @@
               },
               {
                 "id": 4,
-                "name": "Luis Cevallos",
+                "name": "Segundo Demashee",
                 "age": 40,
                 "description": "Desarrollador fullStack",
                 "avatar": "https://pm1.narvii.com/7044/ebf83bd75f8d0f82ec85a01f24fca7c5eab49000r1-540-540v2_hq.jpg"

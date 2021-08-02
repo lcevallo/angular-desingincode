@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DefaultNgclassComponent implements OnInit {
 
-  public cards : {
+  public cards: {
     title: string;
     body?: string;
     isPrimary: boolean;
@@ -55,7 +55,7 @@ export class DefaultNgclassComponent implements OnInit {
     isPrimary: boolean;
     isDisabled: boolean;
   }){
-    card.isDisabled=!card.isDisabled;
+    card.isDisabled =! card.isDisabled;
   }
 
 }
